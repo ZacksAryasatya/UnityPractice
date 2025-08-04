@@ -21,7 +21,12 @@ public class Coin : MonoBehaviour
             meshRenderer.enabled = false;
             coinCollider.enabled = false;
 
+            GameManager.instance.AddScore(1);
+
+
+
             Invoke(nameof(Respawn), 5f);
+
         }
     }
 
